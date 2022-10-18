@@ -1,0 +1,17 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	//-
+	title Fantazista
+
+block content
+
+	div.index-page.container
+		include pug/components/header
+		include pug/pages/index
+		.index__background
+			h2.index__background-text Слоган для продажи
+
