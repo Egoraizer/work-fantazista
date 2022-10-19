@@ -3,15 +3,20 @@
 	max-width: $max-width-container;
 }
 
-h1 .h1 {
+h1,
+.h1 {
 
 }
 
-h2 .h2 {
-
+h2,
+.h2 {
+	font-size: vw(60);
+	line-height: vw(55);
 }
 
 body {
+	font-family: $font-montserrat;
+	font-weight: 400;
 	color: $color-gray-2;
 	background-color: $color-body-background;
 }

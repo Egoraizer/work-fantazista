@@ -9,9 +9,12 @@ append vars
 
 block content
 
-	div.index-page.container
+	.index-page
 		include pug/components/header
 		include pug/pages/index
-		.index__background
-			h2.index__background-text Слоган для продажи
+	.index__background.container
+		.index__background-wrapper
+			h2.index__background-text Слоган <br> для продажи
+			.decoration--orange Блок
+			.index__background-image
 
