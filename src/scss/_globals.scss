@@ -10,8 +10,28 @@ h1,
 
 h2,
 .h2 {
-	font-size: vw(60);
-	line-height: vw(55);
+	font-size: vw(60, 30);
+	line-height: vw(55, 45);
+}
+
+h3,
+.h3 {
+	font-size: vw(30, 16);
+	line-height: vw(36, 20);
+}
+
+.decoration {
+	position: absolute;
+	width: 40px;
+	height: 10px;
+
+	&.--orange {
+		background-color: $color-orange-1;
+	}
+
+	&.--black {
+		background-color: $color-black;
+	}
 }
 
 body {
