@@ -24,7 +24,7 @@
 
 		.decoration {
 			left: 0;
-			bottom: -40px;
+			bottom: -50%;
 		}
 	}
 
@@ -146,12 +146,6 @@
 	.header {
 		&-wrapper {
 			margin-bottom: 25px;
-		}
-
-		&__block {
-			.decoration {
-				display: none;
-			}
 		}
 	}
 }

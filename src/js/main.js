@@ -13,7 +13,8 @@ const mainSlider = new Swiper('.index-slider', {
 });
 
 const advantageSlider = new Swiper('.index-advantage__content', {
-  slidesPerView: 3,
+  slidesPerView: 2,
+  spaceBetween: 50,
   pagination: {
     el: '.index-advantage__pagination',
     type: 'bullets',
@@ -28,6 +29,11 @@ const advantageSlider = new Swiper('.index-advantage__content', {
           </svg>
         </span>
       `
+    }
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 3,
     }
   },
   navigation: {
