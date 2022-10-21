@@ -1,6 +1,6 @@
-import Swiper, {Navigation, Pagination, EffectFade, Thumbs, Scrollbar} from 'swiper';
+import Swiper, {Navigation, Pagination, Scrollbar, Autoplay} from 'swiper';
 
-Swiper.use([Navigation, Pagination, EffectFade, Thumbs, Scrollbar]);
+Swiper.use([Navigation, Pagination, Scrollbar, Autoplay]);
 
 const mainSlider = new Swiper('.index-slider', {
   slidesPerView: 1,
@@ -8,13 +8,15 @@ const mainSlider = new Swiper('.index-slider', {
   centeredSlides: true,
   navigation: {
     nextEl: '.index-slider__button_next',
-    prevEl: '.index-slider__button_prev'
+    prevEl: '.index-slider__button_prev',
+    disabledClass: 'index-slider__button_disabled'
   }
 });
 
 const advantageSlider = new Swiper('.index-advantage__content', {
   slidesPerView: 2,
   spaceBetween: 50,
+  allowTouchMove: false,
   pagination: {
     el: '.index-advantage__pagination',
     type: 'bullets',
@@ -38,7 +40,8 @@ const advantageSlider = new Swiper('.index-advantage__content', {
   },
   navigation: {
     nextEl: '.index-advantage__button_next',
-    prevEl: '.index-advantage__button_prev'
+    prevEl: '.index-advantage__button_prev',
+    disabledClass: 'index-advantage__button_disabled'
   }
 })
 
@@ -46,10 +49,15 @@ const advantageSlider = new Swiper('.index-advantage__content', {
 const gallerySlider = new Swiper('.index-gallery__slider', {
   slidesPerView: 2,
   spaceBetween: 15,
+  autoplay: {
+    delay: 7500
+  },
   navigation: {
     nextEl: '.index-gallery__button_next',
-    prevEl: '.index-gallery__button_prev'
+    prevEl: '.index-gallery__button_prev',
+    disabledClass: 'index-gallery__button_disabled'
   },
+  loop: true,
   breakpoints: {
     1241: {
       slidesPerView: 4,
