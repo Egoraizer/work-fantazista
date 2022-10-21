@@ -41,10 +41,27 @@ body {
 	background-color: $color-body-background;
 }
 
+.index {
+	&__block {
+		margin-bottom: 50px;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
 
 @media (max-width: 1240px) {
 	.container {
 		padding-right: 30px;
 		padding-left: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.index {
+		&__block {
+			margin-bottom: 25px;
+		}
 	}
 }
