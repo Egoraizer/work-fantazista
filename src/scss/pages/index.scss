@@ -321,7 +321,6 @@
 		}
 
 		&__inner {
-			padding: 25px;
 			width: 100%;
 			height: 100%;
 			background-color: $color-gray-2;
@@ -330,7 +329,7 @@
 				padding: 25px;
 				width: 100%;
 				height: 100%;
-				max-height: 525px;
+				max-height: vw(525, 225);
 				background-color: #fff;
 			}
 		}
@@ -348,11 +347,20 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			bottom: 50px;
+			bottom: 30px;
 			z-index: 2;
 			display: flex;
 			align-items: center;
 			justify-content: space-around;
+		}
+
+		&__button {
+			width: vw(100, 50);
+
+			svg {
+				width: 100%;
+				height: 100%;
+			}
 		}
 
 		&__items {
@@ -360,7 +368,7 @@
 		}
 
 		&__item {
-			max-height: 50%;
+			height: vw(300, 115);
 
 			img {
 				width: 100%;
@@ -665,6 +673,8 @@
 		}
 
 		&-advantage {
+			margin-bottom: 25px;
+
 			&__title {
 				margin-bottom: 15px;
 				text-align: center;
@@ -677,6 +687,12 @@
 						width: 100%;
 					}
 				}
+			}
+		}
+
+		&-gallery {
+			&__wrapper {
+				padding-bottom: 100px;
 			}
 		}
 	}

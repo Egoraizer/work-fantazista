@@ -44,10 +44,18 @@ const advantageSlider = new Swiper('.index-advantage__content', {
 
 
 const gallerySlider = new Swiper('.index-gallery__slider', {
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 15,
   navigation: {
     nextEl: '.index-gallery__button_next',
     prevEl: '.index-gallery__button_prev'
+  },
+  breakpoints: {
+    1241: {
+      slidesPerView: 4,
+    },
+    481: {
+      slidesPerView: 3,
+    }
   }
 })
