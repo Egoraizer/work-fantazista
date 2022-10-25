@@ -89,7 +89,7 @@
 	}
 }
 
-@media (max-width: 1440px) {
+@media (max-width: $laptop) {
 	.header {
 		margin-bottom: vw(200, 25);
 
@@ -142,7 +142,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $landscape) {
 	.header {
 		&-wrapper {
 			margin-bottom: 25px;
@@ -150,7 +150,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
 	.header {
 		margin-bottom: 30px;
 

@@ -47,7 +47,6 @@
 			left: 0;
 			right: 0;
 			top: 40%;
-			z-index: 2;
 			display: flex;
 			justify-content: space-between;
 		}
@@ -609,6 +608,7 @@
 			position: absolute;
 			right: 0;
 			bottom: -20px;
+			z-index: -1;
 			opacity: 0.3;
 
 			img {
@@ -619,7 +619,7 @@
 	}
 }
 
-@media (max-width: 1240px) {
+@media (max-width: $monitors) {
 	.index {
 		&-slider {
 			&__navigation {
@@ -636,7 +636,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $landscape) {
 	.index {
 		&-video {
 			&__block {
@@ -703,7 +703,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet) {
 	.index {
 		&-slider {
 			&__description {
@@ -828,7 +828,7 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
 	.index {
 		&-gallery {
 			margin-bottom: 25px;
