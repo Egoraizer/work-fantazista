@@ -1,4 +1,10 @@
+import AOS from 'aos';
 import Swiper, {Navigation, Pagination, Scrollbar, Autoplay} from 'swiper';
+// import 'aos/dist/aos.css';
+
+AOS.init({
+  disable: 'mobile'
+});
 
 Swiper.use([Navigation, Pagination, Scrollbar, Autoplay]);
 

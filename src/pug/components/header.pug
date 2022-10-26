@@ -2,18 +2,18 @@ header.header.container
 	.header-wrapper
 		.header__content
 			.header__left
-				.header__logo
+				.header__logo(data-aos="fade-right" data-aos-delay="500")
 					img(src="./images/logos/logo1.svg", alt="")
 			.header__center
-				.header__block
+				.header__block(data-aos="fade-down" data-aos-delay="1000")
 					h2.header__title Слоган <br> для продажи
 					.decoration.--orange
 			.header__right
-				.header__logo
+				.header__logo(data-aos="fade-left" data-aos-delay="500")
 					img(src="./images/logos/logo2.svg", alt="")
 	nav.header-navigation
-		ul.header-navigation__items
-			li.header-navigation__item  
+		ul.header-navigation__items(data-aos="fade-down-right" data-aos-delay="1500")
+			li.header-navigation__item
 				a(href="#") О проекте
 			li.header-navigation__item  
 				a(href="#") Продукты
@@ -23,5 +23,5 @@ header.header.container
 				a(href="#") Сертификаты
 			li.header-navigation__item  
 				a(href="#") Контакты
-	.header__background
+	.header__background(data-aos="fade-down" data-aos-delay="1000")
 		img(src="./images/background-banner.png", alt="")
