@@ -39,3 +39,17 @@
 	font-weight: 700;
 	font-style: normal;
 }
+
+@font-face {
+	src: url("NeusaNextPro-Light.eot");
+	src:
+		local("Neusa Next Pro Light"),
+		local("NeusaNextPro-Light"),
+		url("../fonts/NeusaNextPro-Light.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/NeusaNextPro-Light.woff2") format("woff2"),
+		url("../fonts/NeusaNextPro-Light.woff") format("woff"),
+		url("../fonts/NeusaNextPro-Light.ttf") format("truetype");
+	font-family: "Neusa Next Pro";
+	font-weight: 300;
+	font-style: normal;
+}
