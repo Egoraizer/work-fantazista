@@ -8,10 +8,6 @@
 		overflow: hidden;
 		padding: 0 vw(100, 50);
 
-		&__items {
-			max-height: vw(650, 200);
-		}
-
 		&__image {
 			display: flex;
 			align-items: center;
@@ -21,6 +17,7 @@
 			img {
 				width: 100%;
 				height: 100%;
+				max-height: vw(500, 250);
 				object-fit: contain;
 			}
 		}
@@ -204,14 +201,11 @@
 		&__content {
 			position: relative;
 			overflow: hidden;
+			padding: vw(50, 25) 0;
 		}
 
 		&__wrapper {
 			background-color: $color-orange-2;
-		}
-
-		&__items {
-			max-height: vw(500, 150);
 		}
 
 		&__item {
@@ -251,7 +245,7 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			bottom: 20%;
+			bottom: 17%;
 			z-index: 5;
 		}
 
@@ -331,6 +325,7 @@
 
 		&__content {
 			position: relative;
+			height: vw(525, 115);
 
 			.decoration {
 				left: 50%;
@@ -363,6 +358,9 @@
 			right: 0;
 			top: 0;
 			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			overflow: hidden;
 		}
 
@@ -378,7 +376,7 @@
 		}
 
 		&__button {
-			width: vw(100, 50);
+			width: vw(100, 40);
 			opacity: 0.7;
 			transition: 0.3s opacity;
 
@@ -399,11 +397,10 @@
 
 		&__items {
 			align-items: center;
+			max-height: 60%;
 		}
 
 		&__item {
-			height: vw(300, 115);
-
 			img {
 				width: 100%;
 				height: 100%;
@@ -428,6 +425,7 @@
 	}
 
 	&-request {
+		overflow: hidden;
 		margin-bottom: 50px;
 
 		&__block {
@@ -651,6 +649,22 @@
 			}
 		}
 
+		&-gallery {
+			&__content {
+				.decoration {
+					display: none;
+				}
+			}
+
+			&__items {
+				max-height: 75%;
+			}
+
+			&__navigation {
+				bottom: 0;
+			}
+		}
+
 		&-request {
 			&__title {
 				text-align: center;
@@ -711,12 +725,8 @@
 				bottom: 0;
 				display: flex;
 				flex-direction: column;
-				align-items: center;
+				align-items: flex-end;
 				max-width: 100%;
-			}
-
-			&__image {
-				height: 80%;
 			}
 		}
 
